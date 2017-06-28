@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 import './hello.html';
@@ -9,8 +9,7 @@ Template.Hello.onCreated(function onHelloCreated() {
 
   const instance = this;
 
-  instance.counter = new ReactiveVar();
-  instance.favoriteColor;
+  instance.state = new ReactiveDict();
 
   instance.autorun(() => {
     instance.subscribe('currentUser.fields', ['count', 'favoriteColor']);
@@ -21,30 +20,19 @@ Template.Hello.onCreated(function onHelloCreated() {
       const count = user.get('count');
       const favoriteColor = user.get('favoriteColor');
 
-      instance.counter.set(count);
-      instance.favoriteColor = favoriteColor;
+      instance.state.set('counter', count);
+      instance.state.set('favoriteColor', favoriteColor);
 
     }
   });
 });
 
-Template.Hello.helpers({
-  counter() {
-    const instance = Template.instance();
-    return instance.counter.get();
-  },
-  favoriteColor() {
-    const instance = Template.instance();
-    return instance.favoriteColor;
-  }
-});
-
 Template.Hello.events({
   'click .js-increment-count'(event, instance) {
-    const count = instance.counter.get();
+    const count = instance.state.get('counter');
 
     // Increment the counter when button is clicked
-    instance.counter.set(count + 1);
+    instance.state.set('counter', count + 1);
   },
   'click .js-sign-out'(event, instance) {
     AccountsTemplates.logout();
