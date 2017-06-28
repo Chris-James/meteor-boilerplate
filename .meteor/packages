@@ -35,7 +35,6 @@ check
 
 # ui
 fourseven:scss
-reactive-var@1.0.11           # Reactive variable for tracker
 reactive-dict
 
 # development
