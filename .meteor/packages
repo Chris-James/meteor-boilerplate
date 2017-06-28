@@ -17,26 +17,25 @@ es5-shim@4.6.15               # ECMAScript 5 compatibility for older browsers.
 ecmascript@0.6.1              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.2.1            # Server-side component of the `meteor shell` command
 
-
-# routing
-kadira:blaze-layout
-kadira:flow-router
-
-# user accounts
-useraccounts:unstyled
-useraccounts:flow-routing
-accounts-password
-
-# data
+# Data
 aldeed:collection2-core       # Requires "simpl-schema" in package.json
+check
 dburles:collection-helpers
 mdg:validated-method
-check
 
-# ui
+# Development
+aldeed:template-extension     # Required by User Accounts
+meteortoys:allthings@3.0.0    # Must be v3.0.0 for credentials to work
+
+# UI
 fourseven:scss
 reactive-dict
 
-# development
-meteortoys:allthings@3.0.0    # Must be v3.0.0 for credentials to work
-aldeed:template-extension
+# User Accounts
+accounts-password
+useraccounts:flow-routing
+useraccounts:unstyled
+
+# Routing
+kadira:blaze-layout
+kadira:flow-router
