@@ -1,28 +1,6 @@
 ## Packages
 
 ### Atmosphere (Meteor) Packages
-#### User Accounts
-
-`accounts-password`
-
-Adds support for the password authentication strategy to the Meteor accounts system.
-
-[`useraccounts:flow-routing`](https://github.com/meteor-useraccounts/flow-routing/)
-
-User Accounts add-on package providing routes configuration capability via `kadira:flow-router`.
-
-[`useraccounts:unstyled`](https://github.com/meteor-useraccounts/unstyled/)
-
-Provides highly customizable user accounts UI templates unstyled.
-
-#### UI
-[`fourseven:scss`](https://github.com/fourseven/meteor-scss)
-
-Adds support for the compilation of `.scss` files.
-
-[`reactive-dict`](https://github.com/meteor/meteor/tree/master/packages/reactive-dict)
-
-A general-purpose reactive datatype for use with `tracker`. Provides all of the functionality of the `Session` object documented in the main Meteor docs, such as reactive `get`, `set`, and `equals` functions.
 
 #### Data
 [`aldeed:collection2-core`](https://github.com/aldeed/meteor-collection2-core/)
@@ -43,7 +21,6 @@ A wrapper package for `meteor.methods` that enables defining methods in a more s
 
 
 #### Development
-
 [`aldeed:template-extension`](https://github.com/aldeed/meteor-template-extension/)
 
 Adds template features including global hooks, inheritance, and additional methods not available in the default Meteor templating package. __Required by useraccounts.__
@@ -51,6 +28,30 @@ Adds template features including global hooks, inheritance, and additional metho
 [`meteortoys:allthings`](https://github.com/MeteorToys/allthings/)
 
 In-app development tools. Available in the development environment only.
+
+
+#### UI
+[`fourseven:scss`](https://github.com/fourseven/meteor-scss)
+
+Adds support for the compilation of `.scss` files.
+
+[`reactive-dict`](https://github.com/meteor/meteor/tree/master/packages/reactive-dict)
+
+A general-purpose reactive datatype for use with `tracker`. Provides all of the functionality of the `Session` object documented in the main Meteor docs, such as reactive `get`, `set`, and `equals` functions.
+
+
+#### User Accounts
+`accounts-password`
+
+Adds support for the password authentication strategy to the Meteor accounts system.
+
+[`useraccounts:flow-routing`](https://github.com/meteor-useraccounts/flow-routing/)
+
+User Accounts add-on package providing routes configuration capability via `kadira:flow-router`.
+
+[`useraccounts:unstyled`](https://github.com/meteor-useraccounts/unstyled/)
+
+Provides highly customizable user accounts UI templates unstyled.
 
 
 #### Routing
@@ -61,6 +62,7 @@ A layout manager designed for use with Blaze and FlowRouter.
 [`kadira:flow-router`](https://github.com/kadirahq/flow-router/)
 
 Client side router. Inclues an API for changing URLs, redirecting, and reactively retrieving data from the URL.
+
 
 ### NPM Packages
 `babel-runtime`
