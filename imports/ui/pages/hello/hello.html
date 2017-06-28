@@ -4,8 +4,8 @@
       {{#if Template.subscriptionsReady}}
         <div class="col-xs-12">
           <button type="button" class="btn btn-sm mb-1 js-increment-count">Click Me</button>
-          <p>You've pressed the button {{counter}} times.</p>
-          <p class="mb-2">Your favorite color is {{favoriteColor}}.</p>
+          <p>You've pressed the button {{get 'counter'}} times.</p>
+          <p class="mb-2">Your favorite color is {{get 'favoriteColor'}}.</p>
           <button type="button" class="btn btn-sm btn-danger js-sign-out">Sign out</button>
         </div>
       {{/if}}
