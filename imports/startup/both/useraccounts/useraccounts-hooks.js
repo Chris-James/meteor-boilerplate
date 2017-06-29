@@ -1,4 +1,3 @@
-import { AccountsTemplates } from 'meteor/useraccounts:core';
 /*******************************************************************************
  * @file useraccounts-hooks
  * @overview Contains User Accounts-related hook function definitions. Hook
