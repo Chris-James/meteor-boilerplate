@@ -12,7 +12,7 @@ Template.Hello.onCreated(function onHelloCreated() {
   instance.state = new ReactiveDict();
 
   instance.autorun(() => {
-    instance.subscribe('currentUser.fields', ['count', 'favoriteColor']);
+    instance.subscribe('currentUser', ['count', 'favoriteColor']);
 
     if (instance.subscriptionsReady()) {
 
