@@ -1,6 +1,5 @@
 import { AccountsTemplates } from 'meteor/useraccounts:core';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-import { updateUser, unsetUserProfile } from '/imports/collections/users/methods.js'
 
 /**
  * @function onLogout
