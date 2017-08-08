@@ -25,7 +25,7 @@ mdg:validated-method
 
 # Development
 aldeed:template-extension     # Required by User Accounts
-meteortoys:allthings@3.0.0    # Must be v3.0.0 for credentials to work
+meteortoys:allthings
 
 # UI
 fourseven:scss
