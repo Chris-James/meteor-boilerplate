@@ -9,5 +9,5 @@ import { Template } from 'meteor/templating';
  */
 Template.registerHelper('get', function(field) {
   const instance = Template.instance();
-  return instance.state.get(field);
+  return instance.state ? instance.state.get(field) : '';
 });
