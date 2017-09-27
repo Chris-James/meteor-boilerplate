@@ -15,8 +15,7 @@ AccountsTemplates.configure({
   negativeValidation: true,   // Highlight input elements in case of negative validation.
 
   // Links
-  // ...Redirect to `homeRoutePath` after successful form submission. Default is `/`.
-  homeRoutePath: '/hello',
+  homeRoutePath: '/hello',    // Redirect target after successful form submission. Default is `/`.
 
   // Hooks
   onLogoutHook: onLogout
