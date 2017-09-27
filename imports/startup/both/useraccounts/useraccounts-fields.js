@@ -31,7 +31,7 @@ AccountsTemplates.addFields([
     required: true,
     placeholder: "Email address",
     re: /.+@(.+){2,}\.(.+){2,}/,
-    errStr: 'Invalid email',
+    errStr: "Please provide a valid email address.",
     template: 'TextInput'
   },{
     _id: 'password',
