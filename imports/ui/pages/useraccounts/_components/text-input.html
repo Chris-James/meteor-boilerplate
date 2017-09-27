@@ -1,5 +1,5 @@
 <template name="TextInput">
   <div class="form-group {{#if hasError}} is-invalid {{/if}} {{#if hasSuccess}} is-valid {{/if}}">
-    <input type="{{ type }}" class="form-control" id="at-field-{{ _id }}" name="at-field-{{ _id }}" placeholder="{{ placeholder }}">
+    <input type="{{ type }}" class="form-control {{#if hasError}} is-invalid {{/if}}" id="at-field-{{ _id }}" name="at-field-{{ _id }}" placeholder="{{ placeholder }}">
   </div>
 </template>
