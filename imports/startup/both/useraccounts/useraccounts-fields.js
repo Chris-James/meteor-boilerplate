@@ -52,6 +52,7 @@ AccountsTemplates.addFields([
     type: 'text',
     required: true,
     placeholder: 'Favorite Color',
+    errStr: "Please provide your favorite color.",
     template: 'TextInput'
   }
 ]);
