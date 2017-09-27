@@ -38,7 +38,7 @@ AccountsTemplates.addFields([
     type: 'password',
     required: true,
     minLength: 6,
-    errStr: 'At least 6 characters',
+    errStr: "Please include at least 6 characters.",
     template: 'TextInput'
   },
   {
