@@ -40,8 +40,14 @@ AccountsTemplates.addFields([
     minLength: 6,
     errStr: "Please include at least 6 characters.",
     template: 'TextInput'
-  },
-  {
+  },{
+    _id: "password_again",
+    type: "password",
+    required: true,
+    errStr: "Your passwords must match.",
+    placeholder: "Password (again)",
+    template: "TextInput"
+  },{
     _id: 'favoriteColor',
     type: 'text',
     required: true,
