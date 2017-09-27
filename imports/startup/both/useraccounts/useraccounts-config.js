@@ -11,6 +11,9 @@ AccountsTemplates.configure({
   // Appearance
   showForgotPasswordLink: true,
 
+  // Validation
+  negativeValidation: true,   // Highlight input elements in case of negative validation.
+
   // Links
   // ...Redirect to `homeRoutePath` after successful form submission. Default is `/`.
   homeRoutePath: '/hello',
